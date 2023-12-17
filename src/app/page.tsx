@@ -151,7 +151,7 @@ export default function Home() {
             </div>
             <div className="col-span-2 mt-24">
                 <span>
-                    I like coding, designing, and playing games. Being Creative is my Outlet.
+                    I like to code and design anything. Being creative is my outlet.
                 </span>
                 <p className="mt-10">Geralyn's Workspace</p>
             </div>
