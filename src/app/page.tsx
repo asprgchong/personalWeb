@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import styles from '../app/styles.module.css'
 
-
 export default function Home() {
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-0">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex ml-1/12">
+        <div className="flex justify-between items-center">
+            <img className="flex w-7 mr-6" src="../favicon.ico"></img>
+            <p>Welcome to my Workspace!</p>
+        </div>
+        
         <nav className="fixed left-0 top-2 flex w-full justify-center lg:static lg:w-auto  lg:rounded-xl lg:p-4 space-x-20 flex-row">
           <a href="#ProjectSect" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Projects</a>   
           <a href="mailto: yinchongweig@gmail.com" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Email Me</a>
@@ -15,10 +20,15 @@ export default function Home() {
         
       </div>
 
-      <div className="relative place-items-center m:mx-8 lg:mx-36 grid lg:grid-rows-1 sm:grid-rows-2 lg: grid-cols-2 space-x-10">
-        <div>
-            <h1 className='text-5xl my-4 mt-32 font-semibold tracking-wider'>Geralyn Chong</h1>
-            <p className='text-2xl mb-8'>I am a second year at the University of Chicago studying Computer Science and Business Economics.</p>
+      <div className="relative place-items-center m:mx-8 lg:mx-36 grid lg:grid-rows-1 sm:grid-rows-2 lg: grid-cols-2 space-x-10 gap-10">
+        <div className={styles.fadeIN}>
+            <h1 className='text-5xl my-4 mt-32 font-semibold tracking-wider'>GERALYN CHONG</h1>
+
+            <p className='text-1xl mb-8'>I am a second year at the University of Chicago 
+            studying <span> Computer&nbsp;Science and Business Economics </span>. 
+            <p className='my-4'></p>
+            I enjoy building innovative solutions and learning new tech stacks! <br/>In fact, I am currently learning how to build interactive websites, IOS Apps, and 3D models. Come along with me on my journey to using my technical skills to make a real-world impact!</p>
+
             <p className='mt-10 mb-6 flex space-x-4'>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
                 <path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
@@ -34,23 +44,24 @@ export default function Home() {
                 
             </p>
             
-            <div className={styles.animatedLoad}>
-                <p className='my-2'><code>int fd = open(`geralynProjects.txt`, O_RDONLY | O_CREAT);</code></p>
-                <p className='my-2'><code>int nbytes = read(fd, buf, 1024);</code></p>
-                <p className='my-2 mb-8'><code>if (nbytes {'>'} 0){'{'}</code></p>
+            <div className={styles.typewriter}>
+                <p id="typing1" className='my-2'><code>int fd = open(`geralynProjects.txt`, O_RDONLY | O_CREAT);</code></p>
+                <p id="typing2" className='my-2'><code>int nbytes = read(fd, buf, 1024);</code></p>
+                <p id="typing3" className='my-2'><code>if (nbytes {'>'} 0){'{'}</code></p>
             </div>
+
         </div>
-        <iframe src='https://my.spline.design/personalportfolio-d879560ef42c9dc3e0f28215b171a3ef/' width='100%' height='80%'></iframe>
+        <iframe className="mt-24" src='https://my.spline.design/personalportfolio-d879560ef42c9dc3e0f28215b171a3ef/' width='100%' height='80%'></iframe>
       </div>
 
       <div id="ProjectSect" className={styles.header}>
             <div className={styles.animatedLoaded}>
                 <div>
-                    <h2 className='text-2xl mb-4'>Projects</h2>
-                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:grid-rows-2 lg:text-left space-x-4">
+                    <h2 className='text-2xl mb-6 mt-10'>Projects</h2>
+                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left space-x-4">
                         <a
                         href="https://www.skyit.services/services"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -69,7 +80,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/techteam_workshop?tab=readme-ov-file"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -88,7 +99,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/SwiftUI_trialFun"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -106,7 +117,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/web102_prework"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -121,16 +132,30 @@ export default function Home() {
                             Developing an interactive interface from HTML shell provided, eventlisteners, various functions from arrow to reduce(), and ternary operators were learned and implemented.  
                         </p>
                         </a>
-
-                        <a>
-                            <p className={`w-96 text-base mt-8`}>More Working in Progress...</p>
-                        </a>
+                    </div>
+                </div>
+                <div className="grid h-[800px] w-[950px] scale-75 rounded-md">
+                    <div className='my-8 ml-20'>
+                        <iframe src='https://my.spline.design/chesssetcopy-45ae8ca8e398581eb37be17f8cf1f665/' width='100%' height='100%'></iframe>
                     </div>
                 </div>
             </div>
       </div>
-      <footer className='p-10 text-center space-x-10'>
-        Wei Yin (Geralyn) Chong Workspace
+      <footer>
+        <div className="grid grid-rows-1 grid-cols-3 pb-10 space-x-4">
+            <div className="block pb-4 m-4 space-y-6">
+                <p className=" text-left block font-semibold text-xl pb-4">Contact Me</p>   
+                <a href="mailto: yinchongweig@gmail.com" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Email Me</a>
+                <a href="https://www.linkedin.com/in/geralyn-chong/" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Linkedin</a>
+                <a href="https://github.com/asprgchong" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">GitHub</a>
+            </div>
+            <div className="col-span-2 mt-24">
+                <span>
+                    I like coding, designing, and playing games. Being Creative is my Outlet.
+                </span>
+                <p className="mt-10">Geralyn's Workspace</p>
+            </div>
+        </div>
       </footer>
     </main>
   )
