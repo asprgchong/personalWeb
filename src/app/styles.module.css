@@ -1,5 +1,60 @@
+.footer {
+    transform:
+      perspective(1000px)
+      rotateX(4deg)
+      rotateY(-16deg)
+      rotateZ(4deg);
+    box-shadow: 24px 16px 64px 0 #2e578c65;
+    border-radius: 2px;
+    padding: 2.5rem;
+    text-align: center;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem/* 40px */ * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem/* 40px */ * calc(1 - var(--tw-space-x-reverse)));
+    width: 80%;
+    position: relative;
+    padding-left: 9rem/* 144px */;
+    padding-right: 9rem/* 144px */;
+    --tw-bg-opacity: 1;
+    padding-bottom: 0.125rem/* 2px */;
+    border-radius: 15px;
+    margin-bottom: 5rem;
+  }
+
+.footer:hover{
+    transform:
+      perspective(0)
+      rotateX(0)
+      rotateY(0)
+      rotateZ(0);
+}
+
+.hoverBold{
+    position: relative;
+    width:fit-content;
+    display: block;
+}
+.hoverBold:hover{
+    border-bottom: solid black 3px;
+}
+
+.fadeIN {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .animatedLoad p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     animation: animateLoad 1s linear 1;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -10,32 +65,7 @@
     animation: animateLoad 0.5s linear 1;
     animation-fill-mode: forwards;
     opacity: 0;
-    animation-delay: 6s;
-}
-
-.animatedLoad p:nth-child(1) {
-	animation-delay: 1s;
-}
-.animatedLoad p:nth-child(2) {
-	animation-delay: 2s;
-}
-.animatedLoad p:nth-child(3) {
-	animation-delay: 3s;
-}
-
-@keyframes animateLoading {
-    0% {
-        opacity: 0;
-		transform: translate3d(0, -20%, 0);
-    }
-    70% {
-        opacity: 1;
-		transform: translate3d(0, 0, 0);
-    }
-    100%{
-        opacity: 0;
-		transform: translate3d(0, -20%, 0);
-    }
+    animation-delay: 5s;
 }
 
 @keyframes animateLoad {
@@ -53,4 +83,50 @@
     display: block;
     margin: 4rem 0rem;
     width:80%;
+}
+
+.typewriter{
+    width: fit-content;
+}
+
+.typewriter p{
+    width: fit-content;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    font-size: 0.8rem;
+  }
+  
+  /* The typing effect */
+  @keyframes typing1 {
+    0% { width: 0}
+    30% {width: 0}
+    100% { width: 100%}
+  }
+  @keyframes typing2 {
+    0% { width: 0 }
+    60% {width: 0}
+    100% { width: 100% }
+  }
+  @keyframes typing3 {
+    0% { width: 0 }
+    70% {width: 0}
+    100% { width: 100% }
+  }
+  
+.typewriter p:nth-child(1) {
+	animation-delay: 1s;
+    animation: 
+    typing1 3s steps(40, end);
+}
+
+.typewriter p:nth-child(2) {
+	animation-delay: 3s;
+    animation: 
+    typing2 4s steps(40, end);
+}
+
+.typewriter p:nth-child(3) {
+	animation-delay: 5s;
+    animation: 
+    typing3 5s steps(40, end);
 }
