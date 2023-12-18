@@ -4,14 +4,13 @@ import styles from '../app/styles.module.css'
 export default function Home() {
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-0">
+    <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-0 lg:ml-0 lg:mr-0 md:-mr-56 md:ml-20 sm:ml-32 sm:-mr-96 min-[320px]:ml-28 min-[320px]:-mr-[736px]">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex ml-1/12">
+        <nav className="fixed left-0 lg:top-2 flex w-full justify-center lg:static lg:w-auto  lg:rounded-xl lg:p-4 space-x-20 flex-row">
         <div className="flex justify-between items-center">
             <img className="flex w-7 mr-6" src="../favicon.ico"></img>
             <p>Welcome to my Workspace!</p>
         </div>
-        
-        <nav className="fixed left-0 top-2 flex w-full justify-center lg:static lg:w-auto  lg:rounded-xl lg:p-4 space-x-20 flex-row">
           <a href="#ProjectSect" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Projects</a>   
           <a href="mailto: yinchongweig@gmail.com" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Email Me</a>
           <a href="https://www.linkedin.com/in/geralyn-chong/" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Linkedin</a>
@@ -20,7 +19,7 @@ export default function Home() {
         
       </div>
 
-      <div className="relative place-items-center m:mx-8 lg:mx-36 grid lg:grid-rows-1 sm:grid-rows-2 lg: grid-cols-2 space-x-10 gap-10">
+      <div className="relative place-items-center m:mx-8 lg:mx-36 grid lg:grid-rows-1 lg: grid-cols-2 space-x-10 gap-10">
         <div className={styles.fadeIN}>
             <h1 className='text-5xl my-4 mt-32 font-semibold tracking-wider'>GERALYN CHONG</h1>
 
@@ -58,10 +57,10 @@ export default function Home() {
             <div className={styles.animatedLoaded}>
                 <div>
                     <h2 className='text-2xl mb-6 mt-10'>Projects</h2>
-                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left space-x-4">
+                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-2 min-[320px]:grid-cols-2 lg:text-left space-x-4">
                         <a
                         href="https://www.skyit.services/services"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -71,7 +70,7 @@ export default function Home() {
                             -&gt;
                             </span>
                         </h2>
-                        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                        <p className={`m-0 lg:max-w-[30ch] md:max-w-[86ch] text-sm opacity-50`}>
                             Developed UI designs in Figma
                             <br/>Implemented using Javascript in Next.js Framework
                             <br/>CSS Animation in Services Page
@@ -80,7 +79,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/techteam_workshop?tab=readme-ov-file"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -90,7 +89,7 @@ export default function Home() {
                             -&gt;
                             </span>
                         </h2>
-                        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                        <p className={`m-0 lg:max-w-[30ch] md:max-w-[86ch] text-sm opacity-50`}>
                             Developed introduction to Figma for fellow students
                             Explored Figma AutoLayout, Prototyping, and Illustrative tools
                             Implemented mock designs into FrontEnd Shell using Anima Plugin 
@@ -99,7 +98,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/SwiftUI_trialFun"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-blue-300 hover:shadow-xl"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -109,15 +108,16 @@ export default function Home() {
                             -&gt;
                             </span>
                         </h2>
-                        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                            Developing a Task Manager app with a simple interface
+                        <p className={`m-0 lg:max-w-[30ch] md:max-w-[86ch] text-sm opacity-50`}>
+                            Developing a Task Manager app with a simple interface. <br/>
                             Using Swift and XCode to implement a responsive UI
                         </p>
+                        <p className={`text-sm italic pt-4`}>In Progress</p>
                         </a>
 
                         <a
                         href="https://github.com/asprgchong/web102_prework"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -127,15 +127,16 @@ export default function Home() {
                             -&gt;
                             </span>
                         </h2>
-                        <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-                            Using Javascript, HTML, and CSS, this exploration is a dive into the DOM
-                            Developing an interactive interface from HTML shell provided, eventlisteners, various functions from arrow to reduce(), and ternary operators were learned and implemented.  
+                        <p className={`m-0 lg:max-w-[30ch] md:max-w-[86ch] text-sm opacity-50`}>
+                            Using Javascript, HTML, and CSS, this exploration is a dive into DOM.<br/>
+                            Developing an interactive interface from an HTML shell: eventlisteners, various functions from arrow to reduce(), and ternary operators are implemented.  
                         </p>
+                        <p className={`text-sm italic pt-4`}>In Progress</p>
                         </a>
                     </div>
                 </div>
                 <div className="grid h-[800px] w-[950px] scale-75 rounded-md">
-                    <div className='my-8 ml-20'>
+                    <div className={styles.spline}>
                         <iframe src='https://my.spline.design/chesssetcopy-45ae8ca8e398581eb37be17f8cf1f665/' width='100%' height='100%'></iframe>
                     </div>
                 </div>
