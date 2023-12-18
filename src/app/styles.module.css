@@ -1,32 +1,5 @@
-.footer {
-    transform:
-      perspective(1000px)
-      rotateX(4deg)
-      rotateY(-16deg)
-      rotateZ(4deg);
-    box-shadow: 24px 16px 64px 0 #2e578c65;
-    border-radius: 2px;
-    padding: 2.5rem;
-    text-align: center;
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem/* 40px */ * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem/* 40px */ * calc(1 - var(--tw-space-x-reverse)));
-    width: 80%;
-    position: relative;
-    padding-left: 9rem/* 144px */;
-    padding-right: 9rem/* 144px */;
-    --tw-bg-opacity: 1;
-    padding-bottom: 0.125rem/* 2px */;
-    border-radius: 15px;
-    margin-bottom: 5rem;
-  }
-
-.footer:hover{
-    transform:
-      perspective(0)
-      rotateX(0)
-      rotateY(0)
-      rotateZ(0);
+.spline{
+    width:50%;
 }
 
 .hoverBold{
