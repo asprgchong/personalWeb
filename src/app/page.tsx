@@ -57,7 +57,7 @@ export default function Home() {
             <div className={styles.animatedLoaded}>
                 <div>
                     <h2 className='text-2xl mb-6 mt-10'>Projects</h2>
-                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 sm:grid-cols-2 sm:grid-rows-2 min-[320px]:grid-cols-2 lg:text-left space-x-4">
+                    <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 min-[320px]:grid-cols-2 lg:text-left space-x-4">
                         <a
                         href="https://www.skyit.services/services"
                         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
