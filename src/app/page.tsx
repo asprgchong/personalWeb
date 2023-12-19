@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import styles from '../app/styles.module.css'
 
+
 export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-0 lg:ml-0 lg:mr-0 md:-mr-56 md:ml-20 sm:ml-32 sm:-mr-96 min-[320px]:ml-28 min-[320px]:-mr-[736px]">
+      <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration = "manual"` }} />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm flex ml-1/12">
         <nav className="fixed left-0 lg:top-2 flex w-full justify-center lg:static lg:w-auto  lg:rounded-xl lg:p-4 space-x-20 flex-row">
         <div className="flex justify-between items-center">
@@ -21,12 +23,14 @@ export default function Home() {
 
       <div className="relative place-items-center m:mx-8 lg:mx-36 grid lg:grid-rows-1 lg: grid-cols-2 space-x-10 gap-10">
         <div className={styles.fadeIN}>
-            <h1 className='text-5xl my-4 mt-32 font-semibold tracking-wider'>GERALYN CHONG</h1>
+            <h1 className='text-6xl my-4 mt-40 font-semibold tracking-wider'>Hello! I'm&nbsp;Geralyn</h1>
 
-            <p className='text-1xl mb-8'>I am a second year at the University of Chicago 
-            studying <span> Computer&nbsp;Science and Business Economics </span>. 
-            <p className='my-4'></p>
-            I enjoy building innovative solutions and learning new tech stacks! <br/>In fact, I am currently learning how to build interactive websites, IOS Apps, and 3D models. Come along with me on my journey to using my technical skills to make a real-world impact!</p>
+            <p className='text-1xl mb-8'>A second year at the University of Chicago 
+            studying <span> Computer&nbsp;Science&nbsp;and Business Economics </span>. 
+            <p className='my-4'>
+            I enjoy building and designing innovative solutions.<br/>
+            I am currently learning how to build interactive websites, IOS Apps, and 3D models.</p>
+            </p>
 
             <p className='mt-10 mb-6 flex space-x-4'>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
@@ -38,7 +42,7 @@ export default function Home() {
                 </svg>
 
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                <path fill="#283593" fill-rule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clip-rule="evenodd"></path><path fill="#5c6bc0" fill-rule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clip-rule="evenodd"></path><path fill="#3949ab" fill-rule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clip-rule="evenodd"></path>
+                <path fill="#283593" fillRule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clipRule="evenodd"></path><path fill="#5c6bc0" fillRule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clipRule="evenodd"></path><path fill="#fff" fillRule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clipRule="evenodd"></path><path fill="#3949ab" fillRule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clipRule="evenodd"></path>
                 </svg>
                 
             </p>
@@ -48,9 +52,8 @@ export default function Home() {
                 <p id="typing2" className='my-2'><code>int nbytes = read(fd, buf, 1024);</code></p>
                 <p id="typing3" className='my-2'><code>if (nbytes {'>'} 0){'{'}</code></p>
             </div>
-
         </div>
-        <iframe className="mt-24" src='https://my.spline.design/personalportfolio-d879560ef42c9dc3e0f28215b171a3ef/' width='100%' height='80%'></iframe>
+        <iframe src='https://my.spline.design/personalportfolio-d879560ef42c9dc3e0f28215b171a3ef/' width='100%' height='80%'></iframe>
       </div>
 
       <div id="ProjectSect" className={styles.header}>
@@ -60,7 +63,7 @@ export default function Home() {
                     <div className="mb-32 grid text-center lg:max-w-10xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:grid-rows-1 sm:grid-cols-2 sm:grid-rows-2 min-[320px]:grid-cols-2 lg:text-left space-x-4">
                         <a
                         href="https://www.skyit.services/services"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -79,7 +82,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/techteam_workshop?tab=readme-ov-file"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -98,7 +101,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/SwiftUI_trialFun"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -117,7 +120,7 @@ export default function Home() {
 
                         <a
                         href="https://github.com/asprgchong/web102_prework"
-                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl hover:shadow-[#88A2F2]"
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-[#88A2F2] hover:shadow-xl"
                         target="_blank"
                         rel="noopener noreferrer"
                         >
@@ -135,7 +138,7 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <div className="grid h-[800px] w-[950px] scale-75 rounded-md">
+                <div className=" h-[800px] w-[950px] scale-75 rounded-md hidden">
                     <div className={styles.spline}>
                         <iframe src='https://my.spline.design/chesssetcopy-45ae8ca8e398581eb37be17f8cf1f665/' width='100%' height='100%'></iframe>
                     </div>
@@ -143,18 +146,12 @@ export default function Home() {
             </div>
       </div>
       <footer>
-        <div className="grid grid-rows-1 grid-cols-3 pb-10 space-x-4">
-            <div className="block pb-4 m-4 space-y-6">
-                <p className=" text-left block font-semibold text-xl pb-4">Contact Me</p>   
-                <a href="mailto: yinchongweig@gmail.com" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Email Me</a>
-                <a href="https://www.linkedin.com/in/geralyn-chong/" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">Linkedin</a>
-                <a href="https://github.com/asprgchong" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">GitHub</a>
-            </div>
+        <div className="grid grid-rows-1 grid-cols-3 pb-10 space-x-4 text-sm text-center">
             <div className="col-span-2 mt-24">
                 <span>
-                    I like to code and design anything. Being creative is my outlet.
+                    Being creative is my outlet.
                 </span>
-                <p className="mt-10">Geralyn's Workspace</p>
+                <p className="mt-2">&copy; Geralyn's Workspace</p>
             </div>
         </div>
       </footer>
