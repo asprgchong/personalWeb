@@ -4,6 +4,9 @@ import styles from '../app/styles.module.css'
 
 export default function Home() {
 
+    var arr_proj = [{name:"Personal Website", 
+                    descript:"This very website!"}, ];
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between pt-10 pb-0 lg:ml-0 lg:mr-0 md:-mr-56 md:ml-20 sm:ml-32 sm:-mr-96 min-[320px]:ml-28 min-[320px]:-mr-[736px]">
       <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration = "manual"` }} />
@@ -100,6 +103,26 @@ export default function Home() {
                         </a>
 
                         <a
+                        href=""
+                        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:shadow-xl"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <h2 className={`mb-3 text-2xl font-semibold`}>
+                            UChicago TechTeam Neural Networks Workshop{' '}
+                            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                            -&gt;
+                            </span>
+                        </h2>
+                        <p className={`m-0 lg:max-w-[30ch] md:max-w-[86ch] text-sm opacity-50`}>
+                            Introducing deep learning and artificial neural networks to fellow tech enthusiasts on campus.
+                            Using Google Colab, allowing beginners to get a taste of Python libraries such as NumPy, Pandas, and Tensorflow. 
+                            Implementing neural network solutions to solve real world problems in businesses.   
+                        </p>
+                        <p className={`text-sm italic pt-4`}>In Progress</p>
+                        </a>
+
+                        <a
                         href="https://github.com/asprgchong/SwiftUI_trialFun"
                         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:shadow-xl"
                         target="_blank"
@@ -136,6 +159,7 @@ export default function Home() {
                         </p>
                         <p className={`text-sm italic pt-4`}>In Progress</p>
                         </a>
+
                     </div>
                 </div>
                 <div className=" h-[800px] w-[950px] scale-75 rounded-md hidden">
